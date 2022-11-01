@@ -47,7 +47,7 @@ public class WeatherController : ControllerBase
         return Ok(weather);
     }
     
-    [HttpPut("{id}"]
+    [HttpPut("{id}")]
     public ActionResult<Weather> UpdateWeather(int id, Weather weather)
     {
         if (weatherContext.Weather == null)
